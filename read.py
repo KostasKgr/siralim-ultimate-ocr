@@ -13,7 +13,7 @@ def ocr(image):
 
     recognition_image = thresholded
 
-    print(pytesseract.image_to_string(recognition_image)
+    print(pytesseract.image_to_string(recognition_image))
 
     # https://medium.com/@jaafarbenabderrazak.info/ocr-with-tesseract-opencv-and-python-d2c4ec097866
     # for i in range(1,13):
