@@ -13,16 +13,18 @@ def ocr(image):
 
     recognition_image = thresholded
 
+    print(pytesseract.image_to_string(recognition_image)
+
     # https://medium.com/@jaafarbenabderrazak.info/ocr-with-tesseract-opencv-and-python-d2c4ec097866
-    for i in range(1,13):
-        custom_config = f'--psm {i}'
-        print(f"--------- Using psm {i}")
-        try:
-            print(pytesseract.image_to_string(recognition_image, config=custom_config))
-        except:
-            pass
-        finally:
-            pass
+    # for i in range(1,13):
+    #     custom_config = f'--psm {i}'
+    #     print(f"--------- Using psm {i}")
+    #     try:
+    #         print(pytesseract.image_to_string(recognition_image, config=custom_config))
+    #     except:
+    #         pass
+    #     finally:
+    #         pass
 
 
 
